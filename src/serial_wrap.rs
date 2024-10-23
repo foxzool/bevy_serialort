@@ -1,6 +1,4 @@
-use bevy::log::error;
-use std::{sync::Arc, time::Duration};
-
+use bevy_log::error;
 use bytes::Bytes;
 use futures::{
     stream::{SplitSink, SplitStream, StreamExt},
@@ -8,6 +6,7 @@ use futures::{
 };
 use parking_lot::Mutex;
 use serialport::{DataBits, FlowControl, Parity, StopBits};
+use std::{sync::Arc, time::Duration};
 use tokio::sync::mpsc::{unbounded_channel, UnboundedSender};
 use tokio_serial::{SerialPortBuilderExt, SerialStream};
 use tokio_util::codec::{Decoder, Framed};

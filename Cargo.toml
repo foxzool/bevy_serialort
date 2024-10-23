@@ -1,6 +1,6 @@
 [package]
 name = "bevy_serialport"
-version = "0.7.0"
+version = "0.8.0-rc.1"
 edition = "2021"
 authors = ["FoxZoOL <zhooul@gmail.com>"]
 description = "async serial port Plugin for bevy"
@@ -16,7 +16,11 @@ categories = ["game-development", "hardware-support"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-bevy = { version = "0.14.0", default-features = false }
+bevy_app = { version = "0.15.0-rc.1" }
+bevy_ecs = { version = "0.15.0-rc.1"}
+bevy_log = { version = "0.15.0-rc.1" }
+bevy_derive = { version = "0.15.0-rc.1" }
+bevy_utils = { version = "0.15.0-rc.1" }
 bytes = "1.1.0"
 futures = "0.3"
 parking_lot = { version = "0.12" }
@@ -28,6 +32,7 @@ tokio-serial = "5.4.1"
 
 
 [dev-dependencies]
+bevy = { version = "0.15.0-rc.1", default-features = false }
 clap = { version = "4.1", features = ["derive"] }
 tempdir = "0.3"
 

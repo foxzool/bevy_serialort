@@ -2,7 +2,11 @@
 
 use std::{collections::BTreeMap, sync::Arc};
 
-use bevy::prelude::*;
+use bevy_app::prelude::*;
+use bevy_derive::{Deref, DerefMut};
+use bevy_ecs::prelude::*;
+use bevy_log::error;
+use bevy_utils::default;
 use bytes::Bytes;
 use parking_lot::Mutex;
 pub use serialport::{DataBits, FlowControl, Parity, StopBits};

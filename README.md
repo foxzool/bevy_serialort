@@ -68,6 +68,7 @@ fn send_test_data(mut serial_res: ResMut<SerialResource>) {
 
 | bevy | bevy_serialport |
 |------|-----------------|
+| 0.15 | 0.8             |
 | 0.14 | 0.7             |
 | 0.13 | 0.6             |
 | 0.12 | 0.5             |
